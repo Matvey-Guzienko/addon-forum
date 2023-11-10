@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="jquery.js"></script>
+    <script src="2263fd16cd.js" crossorigin="anonymous"></script>
+    <title>Forum Script Addon</title>
+    <style>
+
+        body {
+            background: #17191F;
+            font-family: "Raleway", sans-serif;
+            margin: 0;
+            -webkit-overflow-scrolling: auto;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: rgba(255, 255, 255, 0.0);
+        }
+
+        a {
+            text-decoration: none;
+            opacity: 80%;
+            transition: all 0.5s;
+            color: #17191F;
+        }
+
+        a[type='vk'] {
+            color: #4C75A3;
+        }
+        a[type='ds'] {
+            color: #7289da;
+        }
+        a[type='git'] {
+            color: #2b3137;
+        }
+
+        a:hover {
+            opacity: 100%;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container" id="form-body">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="pt-2 pb-1">
+                                        <h4 class="card-title text-center pb-0 fs-4">Addon by Aaron Castro</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-center">
+                                            1. После установки скрипта вам требуется получить токен вашего аккаунта ВК используя <a class="link-opacity-75-hover" href="https://vkhost.github.io/">сайт.</a>
+                                            <br>2. После получения токена ВК вставьте его в поле GUI расширения.
+                                            <br>3. Для получения peer_id беседы/чата, перейдите в нужный вам диалог и скопируйте значение после "https://vk.com/im?sel=c", после этого добавьте это значение к 2000000000. Пример: 2000000000 + 10 = 2000000010.
+                                            <br>4. В поле админ-тега введите игровой тег. Пример: "| A.Castro".
+                                            <br>5. Настройка скрипта закончена. Пользуйтесь.
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4 class="card-title text-center pb-0 fs-5">Видео инструкция к расширению:</h4>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8vY3ecmI_es?si=uPayOMmUzTfkd-wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="text-center">
+                                            <a href="https://vk.com/dangermt" class="fs-3" type="vk"><i class="fab fa-vk"></i></a>
+                                            <a href="https://discord.gg/dsdqDugh8J" class="fs-3" type="ds"><i class="fab fa-discord"></i></a>
+                                            <a href="https://github.com/Matvey-Guzienko" class="fs-3" type="git"><i class="fab fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

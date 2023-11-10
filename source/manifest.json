@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Forum Script Addon by Aaron Castro",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Addon Script"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "version": "1.0",
+    "description": "Простое дополнение к скрипту Булата",
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+        {
+        "matches": ["https://forum.arizona-rp.com/*"],
+        "js": ["jquery.js", "main.js"],
+        "run_at": "document_start"
+        }
+    ],
+    "icons": {
+	"16": "src/icon16.png",
+	"32": "src/icon32.png",
+	"128": "src/icon128.png"
+    }
+}

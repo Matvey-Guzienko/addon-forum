@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="jquery.js"></script>
+    <script src="2263fd16cd.js" crossorigin="anonymous"></script>
+    <style>
+        main {
+            height: 593px;
+            background: #17191F;
+            font-family: "Raleway", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            width: 400px;
+            z-index: 2;
+            -webkit-overflow-scrolling: auto;
+            overflow-y: scroll;
+            transition: 0.7s;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: rgba(255, 255, 255, 0.0);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container" id="form-body">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="pt-4 pb-2">
+                                        <h4 class="card-title text-center pb-0 fs-4">Addon by Aaron Castro</h4>
+                                        <p class="text-center small">Заполните поля ниже.</p>
+                                    </div>
+                                    <form class="row g-3 text-center needs-validation" id="formlog" action="#" novalidate>
+                                        <div class="col-12">
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                <input placeholder="Введите токен от аккаунта вк" type="text" id="tokenVk" class="form-control" aria-label="Token" aria-describedby="token1" minlength="10" maxlength="1000" required>
+                                                <div class="invalid-feedback">
+                                                    Введите токен от вашего VK аккаунта
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text"><i class="fa-solid fa-comments fa-xs"></i></span>
+                                                <input placeholder="Введите peer_id вашей переписки с ботом" type="text" id="peer_id" class="form-control" aria-label="Peer_id" aria-describedby="peer_id1" minlength="3" maxlength="16" required>
+                                                <div class="invalid-feedback">
+                                                    Введите peer_id вашей переписки с ботом
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text"><i class="fa-solid fa-tag"></i></span>
+                                                <input placeholder="Введите ваш админ-тег" type="text" id="tags" class="form-control" aria-label="Tags" aria-describedby="tags1" minlength="3" maxlength="16" required>
+                                                <div class="invalid-feedback">
+                                                    Введите ваш админ-тег
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button type="submit" class="btn btn-primary w-100">Сохранить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="popup.js"></script>
+</body>
+</html>

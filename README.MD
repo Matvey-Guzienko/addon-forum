@@ -2,6 +2,7 @@
 # Forum Script Addon
 
 ![IMG1](https://img.shields.io/github/downloads/Matvey-Guzienko/addon-forum/total)
+![IMG1](https://img.shields.io/github/stars/Matvey-Guzienko/addon-forum)
 
 Простое дополнение к скрипту Булата
 
